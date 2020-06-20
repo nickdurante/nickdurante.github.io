@@ -23,6 +23,8 @@ github_username: nickdurante
 minimal_mistakes_skin: dark
 search: true
 
+repository: nickdurante/nickdurante.github.io
+
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
