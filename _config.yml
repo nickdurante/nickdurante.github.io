@@ -99,15 +99,6 @@ defaults:
       comments: true
       share: false
       related: true
-
-    #comments:
-    #  provider: "utterances"
-    #  utterances:
-    #    theme: "github-dark" # "github-light"
-    #    issue_term: "pathname"
-
-
-
   # _pages
   - scope:
       path: "_pages"
