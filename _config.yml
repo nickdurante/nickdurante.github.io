@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Nick Durante
+title: "Nick Durante"
 email:
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -23,11 +23,12 @@ github_username: nickdurante
 minimal_mistakes_skin: dark
 search: true
 
-repository: nickdurante/nickdurante.github.io
-
+repository: "nickdurante/nickdurante.github.io"
+url : "https://nickdurante.github.io"
+#baseurl : # the subpath of your site, e.g. "/blog"
 # Build settings
 markdown: kramdown
-remote_theme: mmistakes/minimal-mistakes
+remote_theme: "mmistakes/minimal-mistakes"
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
@@ -79,6 +80,12 @@ footer:
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/nicola-gregorio-durante-5a545617a/"
 
+comments:
+  provider: "utterances"
+  utterances:
+    theme : "github-dark"
+    issue_term : "pathname"
+
 defaults:
   # _posts
   - scope:
@@ -98,12 +105,6 @@ defaults:
     #    theme: "github-dark" # "github-light"
     #    issue_term: "pathname"
 
-
-comments:
-  provider               : "utterances"
-  utterances:
-    theme                : "github-dark"
-    issue_term           : "pathname"
 
 
   # _pages
