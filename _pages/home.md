@@ -1,69 +1,15 @@
 ---
-title: "iLabs LLC"
+title: "Nick Durante"
 layout: splash
 permalink: /
-date: 2016-03-23T11:48:41-04:00
-header:
-  overlay_color: "#000"
-  overlay_filter: "0.5"
-  overlay_image: /assets/images/appdev.svg
-
-excerpt: "All about ideas, incubation, innovation and value delivery"
-intro:
-  - excerpt: "**Our philosophy**"
-feature_row:
-  - image_path: /assets/images/ideate.png
-    image_caption: "Ideate"
-    alt: "Ideate"
-    title: "Ideate"
-    excerpt: "Everything begins with an idea. No idea is too small."
-
-  - image_path: /assets/images/incubate.png
-    image_caption: "Incubate"
-    alt: "Incubate"
-    title: "Incubate"
-    excerpt: "The ideas should have the potential to change the world for better."
-    # url: "#test-link"
-    # btn_label: "Read More"
-    # btn_class: "btn--primary"
-
-  - image_path: /assets/images/innovate.png
-    image_caption: "Innovate"
-    title: "Innovate"
-    excerpt: "Changes call for innovation and innovation leads to progress"
-
-feature_row2:
-  - image_path: /assets/images/ideate.png
-    alt: "Cloud"
-    title: "Cloud Solution Labs"
-    excerpt: 'We have excellent expertise in Azure to deliver overall solution architecture to solve business problems cost effectively using the right technology to use'
-    url: "#test-link"
-    btn_label: "Read More"
-    btn_class: "btn--primary"
-feature_row3:
-  - image_path: /assets/images/mobile.png
-    alt: "Mobile Solution Labs"
-    title: "Mobile Solution Labs"
-    excerpt: 'Help you define a mobile first strategy'
-    url: "#test-link"
-    btn_label: "Read More"
-    btn_class: "btn--primary"
-feature_row4:
-  - image_path: /assets/images/ai.svg
-    alt: "AI Labs"
-    title: "AI Labs"
-    excerpt: 'Cutting edge AI solutions'
-    url: "#test-link"
-    btn_label: "Read More"
-    btn_class: "btn--primary"
 ---
 
-{% include feature_row id="intro" type="center" %}
+# This is a test landing page
 
-{% include feature_row %}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac rutrum dui, eget venenatis eros. Sed massa lorem, faucibus et dui porta, rutrum tincidunt ipsum. Cras faucibus, velit vel egestas mattis, dui erat suscipit dolor, quis efficitur nisi ex vulputate lectus. Nunc et est non orci iaculis finibus. Curabitur non porta nisl, vel laoreet lectus. Vivamus purus erat, finibus ac laoreet in, venenatis et elit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed non sapien commodo, pulvinar augue rhoncus, sagittis tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque sollicitudin nunc auctor justo semper, ac euismod ante sodales. Nulla molestie aliquam lectus non tempor. Aenean gravida vehicula vehicula. Suspendisse tincidunt placerat metus, quis finibus leo vehicula id.
 
-{% include feature_row id="feature_row2" type="left" %}
+Donec pharetra, erat ut pulvinar ullamcorper, mauris ipsum placerat enim, sit amet elementum urna risus sit amet lorem. Morbi lobortis turpis non massa rutrum lobortis. Integer ultrices purus laoreet, tempor dolor posuere, auctor mi. Etiam accumsan nulla vitae neque tempus congue. Vivamus dignissim, odio eget lobortis imperdiet, magna metus faucibus nulla, non laoreet leo dui eget ex. Sed tellus nisi, ultricies vel dignissim sit amet, laoreet ultrices ex. Pellentesque faucibus, ligula sed finibus ultricies, lectus diam tempor neque, eget placerat odio lorem eu diam. Aliquam erat volutpat. Cras tempor, diam eget accumsan vulputate, sapien lorem porttitor nulla, vitae auctor turpis diam facilisis sem. Ut non velit nisl. Sed luctus, mi at varius blandit, justo lorem convallis leo, non tristique tortor lorem a diam. Ut at interdum sem. Mauris a ex nec turpis luctus molestie. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Morbi euismod, nunc id consectetur tincidunt, mauris orci tincidunt risus, vitae convallis metus leo ut tellus. In hac habitasse platea dictumst.
 
-{% include feature_row id="feature_row3" type="right" %}
+Sed sed lectus imperdiet, laoreet ex id, lobortis sem. Aliquam erat volutpat. In sit amet urna molestie, consequat felis in, semper quam. Aliquam non urna lorem. Curabitur ultrices est leo, non ornare nisl eleifend a. Sed eu condimentum libero. Sed varius sem in ante rutrum vulputate. Donec maximus velit ante, eu ullamcorper justo blandit non. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi nec malesuada sem, ac aliquet metus. Aliquam ut libero malesuada, blandit mauris sodales, vehicula dui.
 
-{% include feature_row id="feature_row4" type="center" %}
+Curabitur maximus, diam posuere sodales tincidunt, libero ante mollis nisl, sit amet scelerisque tortor lorem et libero. Duis quis turpis quis enim condimentum feugiat. Morbi leo erat, aliquet quis pharetra ut, luctus quis nibh. Quisque tempor molestie eleifend. Nam sodales justo a ipsum pretium, ac rutrum sapien laoreet. Nunc tincidunt posuere rhoncus. Sed at sodales lectus. Etiam nulla erat, condimentum convallis dui condimentum, tincidunt porttitor ante. Nunc sit amet laoreet sapien. Aenean laoreet bibendum erat, in tincidunt dui gravida eu. Nam dapibus ultrices neque id malesuada. Duis fringilla dui eget ante blandit, a ultricies sem molestie. Fusce finibus, tortor a cursus iaculis, ligula mauris maximus nibh, sed luctus turpis nisi at orci. Cras ut fringilla metus. 
