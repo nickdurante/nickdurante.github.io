@@ -83,7 +83,7 @@ footer:
 comments:
   provider: "utterances"
   utterances:
-    theme : "github-dark"
+    theme : "github-light"
     issue_term : "pathname"
 
 defaults:
