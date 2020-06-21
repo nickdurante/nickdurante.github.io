@@ -1,6 +1,7 @@
 ---
 permalink: /about/
 title: "About"
+classes: wide
 ---
 
 Born and raised in Turin, Italy, I've graduated in Telecommunications Engineering
