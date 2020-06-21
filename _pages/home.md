@@ -1,3 +1,4 @@
+---
 title: "iLabs LLC"
 layout: splash
 permalink: /
