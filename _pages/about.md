@@ -3,6 +3,17 @@ permalink: /about/
 title: "About"
 ---
 
-Tempor velit sint sunt ipsum tempor enim ad qui ullamco. Est dolore anim ad velit duis dolore minim sunt aliquip amet commodo labore. Ut eu pariatur aute ea aute excepteur laborum. Esse ea esse excepteur minim mollit qui cillum excepteur ex dolore magna. Labore deserunt fugiat incididunt incididunt sint ea. Consequat dolore aute laboris quis proident quis non et est consectetur ex eiusmod sit culpa.
+Born and raised in Turin, Italy, I've graduated in Telecommunications Engineering
+from Politecnico di Torino (bachelor) and Universitat Politècnica de Catalunya (Master).
 
-Cupidatat ea do et in excepteur in. Ad nostrud ut est esse eu duis ea sunt eiusmod. Aliquip tempor veniam sint elit fugiat. Velit incididunt laboris amet incididunt labore dolore irure velit excepteur commodo deserunt laborum. Consectetur eu fugiat veniam veniam Lorem labore magna eiusmod. Ea occaecat reprehenderit pariatur consectetur minim labore ut aliquip.
+In the course of my Master I've grown fond of cryptography and from then my interest for cybersecurity sparked.
+A second passion I carry with me is everything related to aerospace, since I was a kid I remember learning with awe
+the legendary stories of Yuri Gagarin and the Apollo 11. Visiting Cape Canaveral as a teen strengthened an already solid passion.
+
+I've covered many roles in my career and they are reflected on my Github repositories, among these roles I had been:
+ Android Developer, a Full-Stack engineer, System Engineer, Web Designer.
+
+
+I'm extremely fond of the mountains and in my free time when I'm not programming you can find me busy on DIY projects, snowboarding, trekking, playing football or tennis.
+
+If you want to contact me, you can find me on Linkedin and GitHub, or just drop a comment on an article.
