@@ -92,11 +92,19 @@ defaults:
       share: false
       related: true
 
-    comments:
-      provider: "utterances"
-      utterances:
-        theme: "github-dark" # "github-light"
-        issue_term: "pathname"
+    #comments:
+    #  provider: "utterances"
+    #  utterances:
+    #    theme: "github-dark" # "github-light"
+    #    issue_term: "pathname"
+
+
+comments:
+  provider               : "utterances"
+  utterances:
+    theme                : "github-dark"
+    issue_term           : "pathname"
+
 
   # _pages
   - scope:
