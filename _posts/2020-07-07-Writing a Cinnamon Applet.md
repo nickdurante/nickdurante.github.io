@@ -78,45 +78,54 @@ this.set_applet_tooltip(_("Manage your VPN connection"));
 this.set_applet_label("Hello");
 ```
 
+Remove the click function, as we don't need it.
+
+```js
+on_applet_clicked: function() {
+    Util.spawn('xkill');
+}
+```
+
 ## Update the label on a loop
 
 Now every good indicator updates its displayed value, to do so add these methods to the ```applet.js```, before closing the ```MyApplet.prototype``` bracket.
 
 ```js
 on_applet_removed_from_panel: function () {
-    // stop the loop when the applet is removed
-		if (this._updateLoopID) {
-			Mainloop.source_remove(this._updateLoopID);
-		}
+// stop the loop when the applet is removed
+	if (this._updateLoopID) {
+		Mainloop.source_remove(this._updateLoopID);
+	}
 
-	},
+},
 
-    _run_cmd: function(command) {
-      try {
+_run_cmd: function(command) {
+// run a command and return the output
+    try {
         let [result, stdout, stderr] = GLib.spawn_command_line_sync(command);
         if (stdout != null) {
-          return stdout.toString();
+            return stdout.toString();
         }
-      }
-      catch (e) {
+    }
+    catch (e) {
         global.logError(e);
-      }
+    }
 
-      return "";
-    },
+    return "";
+},
 
 
 _get_status: function(){
-       let status = this._run_cmd("your command to run");
-       // update the label with the output of your command
-       this.set_applet_label(status);
-   },
+   let status = this._run_cmd("your command to run");
+   // update the label with the output of your command
+   this.set_applet_label(status);
+},
 
-   _update_loop: function () {
-       this._get_status();
-       // run the loop every 5000 ms
-       this._updateLoopID = Mainloop.timeout_add(5000, Lang.bind(this, this._update_loop));
-   },
+_update_loop: function () {
+   this._get_status();
+   // run the loop every 5000 ms
+   this._updateLoopID = Mainloop.timeout_add(5000, Lang.bind(this, this._update_loop));
+},
 
 ```
 
