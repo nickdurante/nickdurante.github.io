@@ -1,5 +1,5 @@
 ---
-title: "Dichiarazione di indipendenza del cyberspazio"
+title: "Dichiarazione di Indipendenza del Cyberspazio"
 categories:
   - Privacy
 tags:
