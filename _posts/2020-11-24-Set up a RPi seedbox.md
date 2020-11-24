@@ -132,4 +132,3 @@ systemctl enable --now minidlna
 
 * Using the tTorrent search ([F-Droid](https://f-droid.org/en/packages/hu.tagsoft.ttorrent.search/)) app you can search and add torrents to the seedbox through Tremotesf ([F-Droid](https://f-droid.org/en/packages/org.equeim.tremotesf/)).
 * Port forwarding (not covered here) allows you to access the seedbox controls remotely (**set a strong authentication method!**)
-*  see below.
