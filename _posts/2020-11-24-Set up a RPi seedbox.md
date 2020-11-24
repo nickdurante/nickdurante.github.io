@@ -80,7 +80,7 @@ Then restart the Transmission daemon.
 systemctl restart transmission-daemon.service
 ```
 
-You now can reach the RCP interface on your local network with a browser (at http://<RPi IP>:9091/transmission/web/) or an app such as Tremotesf  ([F-Droid](https://f-droid.org/en/packages/org.equeim.tremotesf/)) with the same IP.
+You now can reach the RCP interface on your local network with a browser (at http://<RPi IP>:9091/transmission/web/) or an app such as   [Tremotesf](https://f-droid.org/en/packages/org.equeim.tremotesf/) with the same IP.
 
 On the interface or on the ```.config/transmission-daemon/settings.json``` set the download location of your torrents, an HDD is recommended.
 
