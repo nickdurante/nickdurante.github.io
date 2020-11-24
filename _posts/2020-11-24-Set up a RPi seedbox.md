@@ -17,7 +17,7 @@ You can set up one of those with an HDD as a seedbox to download **legal** torre
 A VPN for downloading torrents is always recommended, in my case I use NordVPN.
 
 I thought it might be useful to write this down.
-I based my configuration on the Transmission ([Arch wiki](https://wiki.archlinux.org/index.php/Transmission)), for more configurations head there.
+I based my configuration on the [Transmission Arch wiki](https://wiki.archlinux.org/index.php/Transmission), for more configurations head there.
 
 
 # Install software
@@ -47,7 +47,7 @@ If you don't do so, you'll lose connectivity and it will become quite difficult 
 
 Moreover you won't be able to stream content on your local network.
 
-*If you are not using NordVPN you can configure your iptables to accept connections on your SSH port using the default interface and not tun0.*
+If you are not using NordVPN you can configure your iptables not to use the VPN on the local network, [see here](https://openvpn.net/community-resources/how-to/#redirect).
 
 
 edit ```.config/transmission-daemon/settings.json``` to your liking, it is important to enable RCP and add your IP to the RCP whitelist.
@@ -113,7 +113,7 @@ chown -R pi:torrents hdd/
 chmod -R g+rwx hdd/
 ```
 
-Configure minidlna modifying /etc/minidlna.conf
+Configure minidlna modifying ```/etc/minidlna.conf```.
 
 ```bash
 user=minidlna
@@ -123,7 +123,7 @@ inotify=yes
 network_interface=eth0
 friendly_name=your preferred name
 ```
-Then start minidlna and you are ready to go:
+Then start ```minidlna``` and you are ready to go:
 
 ```bash
 systemctl enable --now minidlna
