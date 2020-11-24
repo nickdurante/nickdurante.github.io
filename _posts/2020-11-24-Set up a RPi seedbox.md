@@ -90,7 +90,7 @@ Then restart the Transmission daemon.
 systemctl restart transmission-daemon.service
 ```
 
-You now can reach the RCP interface on your local network with a browser (at http://<RPi IP>:9091/transmission/web/) or an app such as [Tremotesf](https://f-droid.org/en/packages/org.equeim.tremotesf/) with the same IP.
+You now can reach the RCP interface on your local network with a browser (at http://RPi_IP:9091/transmission/web/) or an app such as [Tremotesf](https://f-droid.org/en/packages/org.equeim.tremotesf/) with the same IP.
 
 On the interface or on the ```.config/transmission-daemon/settings.json``` set the download location of your torrents on your HDD, mine is mounted on ```/media/hdd/```.
 
@@ -109,6 +109,22 @@ usermod -aG torrents minidlna
 cd /media/
 chown -R pi:torrents hdd/
 chmod -R g+rwx hdd/
+#systemctl enable --now minidlna
+```
+
+Configure minidlna modifying /etc/minidlna.conf
+
+```bash
+user=minidlna
+media_dir=/media/hdd/torrents/complete
+merge_media_dirs=yes
+inotify=yes
+network_interface=eth0
+friendly_name=your preferred name
+```
+Then start minidlna and you are ready to go:
+
+```bash
 systemctl enable --now minidlna
 ```
 
