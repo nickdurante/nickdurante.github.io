@@ -109,7 +109,6 @@ usermod -aG torrents minidlna
 cd /media/
 chown -R pi:torrents hdd/
 chmod -R g+rwx hdd/
-#systemctl enable --now minidlna
 ```
 
 Configure minidlna modifying /etc/minidlna.conf
