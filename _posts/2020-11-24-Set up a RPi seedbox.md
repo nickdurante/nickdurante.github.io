@@ -20,7 +20,6 @@ I thought it might be useful to write this down.
 I based my configuration on the [Transmission Arch wiki](https://wiki.archlinux.org/index.php/Transmission), for more configurations head there.
 
 # Versions of software used
-My Raspberry Pi 4 is runs Raspbian GNU/Linux 10 (buster)
 
 | Software | Version|
 |:------|------:|
