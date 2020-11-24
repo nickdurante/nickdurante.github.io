@@ -45,6 +45,8 @@ nordvpn connect --group p2p
 It is extremely important to set the whitelist on your local subnet, in my case ```192.168.1.0/24```, yours can be different.
 If you don't do so, you'll lose connectivity and it will become quite difficult to login with SSH on your Raspberry.
 
+Moreover you won't be able to stream content on your local network.
+
 *If you are not using NordVPN you can configure your iptables to accept connections on your SSH port using the default interface and not tun0.*
 
 
