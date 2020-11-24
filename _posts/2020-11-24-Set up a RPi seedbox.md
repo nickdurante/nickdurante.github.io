@@ -1,5 +1,5 @@
 ---
-title: "Set up a RPi Seedbox"
+title: "Set up a RPi seedbox and media server"
 categories:
   - Development
 tags:
