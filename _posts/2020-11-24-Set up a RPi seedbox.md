@@ -19,6 +19,17 @@ A VPN for downloading torrents is always recommended, in my case I use NordVPN.
 I thought it might be useful to write this down.
 I based my configuration on the [Transmission Arch wiki](https://wiki.archlinux.org/index.php/Transmission), for more configurations head there.
 
+# Versions of software used
+My Raspberry Pi 4 is runs Raspbian GNU/Linux 10 (buster)
+
+| Software | Version|
+|:------|------:|
+| ```OS``` | ```Raspbian GNU/Linux 10 (buster)``` |
+| ```nordvpn``` | ```3.8.6``` |
+| ```transmission-daemon``` | ```2.94-2+deb10u1``` |
+| ```minidlna``` | ```1.2.1+dfsg-1+b1``` |
+
+
 
 # Install software
 We need to install the missing software:
