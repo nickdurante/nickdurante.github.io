@@ -47,7 +47,26 @@ If you don't do so, you'll lose connectivity and it will become quite difficult 
 
 *If you are not using NordVPN you can configure your iptables to accept connections on your SSH port using the default interface and not tun0.*
 
-Edit the transmission service to run as a standard user
+
+edit ```.config/transmission-daemon/settings.json``` to your liking, it is important to enable RCP and add your IP to the RCP whitelist.
+To allow access only from your subnet set RCP whitelist to something like:
+
+```bash
+"rpc-whitelist": "127.0.0.1,192.168.1.*"
+```
+
+
+# Manage privileges
+
+Separating privileges and groups is an important security feature.
+Create a new group to access your HDD download location and a user for transmission:
+
+```bash
+groupadd torrents
+useradd --create-home --groups torrents transmission
+```
+Change the transmission service to run with dedicated user:
+
 ```bash
 # cat /lib/systemd/system/transmission-daemon.service
 [Unit]
@@ -55,7 +74,7 @@ Description=Transmission BitTorrent Daemon
 After=network.target
 
 [Service]
-User=pi
+User=transmission
 #User=debian-transmission
 Type=notify
 ExecStart=/usr/bin/transmission-daemon -f --log-error
@@ -66,26 +85,35 @@ WantedBy=multi-user.target
 
 ```
 
-Start the Transmission daemon
-
-```bash
-systemctl daemon-reload
-systemctl enable --now transmission-daemon.service
-```
-
-edit ```.config/transmission-daemon/settings.json``` to your liking, it is important to enable RCP and add your IP to the RCP whitelist.
-
 Then restart the Transmission daemon.
 ```bash
 systemctl restart transmission-daemon.service
 ```
 
-You now can reach the RCP interface on your local network with a browser (at http://<RPi IP>:9091/transmission/web/) or an app such as   [Tremotesf](https://f-droid.org/en/packages/org.equeim.tremotesf/) with the same IP.
+You now can reach the RCP interface on your local network with a browser (at http://<RPi IP>:9091/transmission/web/) or an app such as [Tremotesf](https://f-droid.org/en/packages/org.equeim.tremotesf/) with the same IP.
 
-On the interface or on the ```.config/transmission-daemon/settings.json``` set the download location of your torrents, an HDD is recommended.
+On the interface or on the ```.config/transmission-daemon/settings.json``` set the download location of your torrents on your HDD, mine is mounted on ```/media/hdd/```.
+
+```bash
+"download-dir": "/media/hdd/torrents/complete",
+"incomplete-dir": "/media/hdd/torrents/incomplete",   
+```
+
+# Stream torrents on your local network
+The UNIX tool ```minidlna``` ([Arch wiki](https://wiki.archlinux.org/index.php/ReadyMedia)) allows you to broadcast on your local network (i.e. smart TV, tablets (VLC) and other PCs) the media content you downloaded.
+Install minidlna and assign right permissions to the HDD folder (in my case mounted on ```/media/hdd/```) and start it.
+
+```bash
+apt install minidlna
+usermod -aG torrents minidlna
+cd /media/
+chown -R pi:torrents hdd/
+chmod -R g+rwx hdd/
+systemctl enable --now minidlna
+```
 
 # Nice to have tools
 
 * Using the tTorrent search ([F-Droid](https://f-droid.org/en/packages/hu.tagsoft.ttorrent.search/)) app you can search and add torrents to the seedbox through Tremotesf ([F-Droid](https://f-droid.org/en/packages/org.equeim.tremotesf/)).
 * Port forwarding (not covered here) allows you to access the seedbox controls remotely (**set a strong authentication method!**)
-* The unix tool ```minidlna``` ([Arch wiki](https://wiki.archlinux.org/index.php/ReadyMedia)) allows you to broadcast on your local network (i.e. smart TV, tablets (VLC) and other PCs) the media content you downloaded.
+*  see below.
