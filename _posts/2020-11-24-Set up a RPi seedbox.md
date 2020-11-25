@@ -57,7 +57,15 @@ If you don't do so, you'll lose connectivity and it will become quite difficult 
 
 Moreover you won't be able to stream content on your local network.
 
-If you are not using NordVPN you can configure your iptables not to use the VPN on the local network, [see here](https://openvpn.net/community-resources/how-to/#redirect).
+If you are not using NordVPN you can configure your iptables not to use the VPN on the local network.
+If you use an OpenVPN text file for config, it's as easy as adding to it:
+```
+push "route <network> <subnet>"
+```
+In my case it would be:
+```
+push "route 192.168.1.0 255.255.255.0"
+```
 
 
 Edit ```.config/transmission-daemon/settings.json``` to your liking, it is important to enable RCP and add your IP to the RCP whitelist.
