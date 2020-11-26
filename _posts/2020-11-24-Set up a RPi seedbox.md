@@ -12,7 +12,7 @@ comments: true
 
 
 Raspberry Pis are cheap and extremely useful for computing small tasks.
-You can set up one of those with an HDD as a seedbox to download **legal** torrents such as Linux distributions and videos from the Internet Archive (**wink wink**).
+You can set up one of those with an HDD as a seedbox to download **legal** torrents such as Linux distributions and videos from the Internet Archive (*wink wink*).
 
 A VPN for downloading torrents is always recommended, in my case I use NordVPN.
 
