@@ -1,4 +1,19 @@
+---
+title: "Fixing AdGuard on GL.iNet Router with VPN DNS Configuration"
+categories:
+  - Development
+  - Privacy
+tags:
+  - development
+  - tech
+comments: true
 
+gallery:
+  - url: https://raw.githubusercontent.com/nickdurante/nickdurante.github.io/a1394d82d3fe7a18e0e6789dc19f61581c9aa3b9/assets/images/port_forward.jpg
+    image_path: https://raw.githubusercontent.com/nickdurante/nickdurante.github.io/a1394d82d3fe7a18e0e6789dc19f61581c9aa3b9/assets/images/port_forward.jpg
+    alt: "Port forward"
+    title: "Port forward"
+---
 # Fixing AdGuard on GL.iNet Router with VPN DNS Configuration
 
 If you're using AdGuardHome with a GL.iNet router on a VPN setup, follow these steps to configure AdGuard to work smoothly with VPN-based DNS.
@@ -6,7 +21,7 @@ If you're using AdGuardHome with a GL.iNet router on a VPN setup, follow these s
 ## Show clients with their identifier instead of "localhost"
 Set the following port forwarding rule in OpenWrt:
 
-![img](https://raw.githubusercontent.com/nickdurante/nickdurante.github.io/a1394d82d3fe7a18e0e6789dc19f61581c9aa3b9/assets/images/port_forward.jpg)
+{% include gallery caption="Port forward" %}
 
 ## Step-by-Step Instructions
 
