@@ -6,7 +6,7 @@ If you're using AdGuardHome with a GL.iNet router on a VPN setup, follow these s
 ## Show clients with their identifier instead of "localhost"
 Set the following port forwarding rule in OpenWrt:
 
-![img](https://github.com/nickdurante/nickdurante.github.io/blob/a1394d82d3fe7a18e0e6789dc19f61581c9aa3b9/assets/images/port_forward.jpg)
+![img](https://raw.githubusercontent.com/nickdurante/nickdurante.github.io/a1394d82d3fe7a18e0e6789dc19f61581c9aa3b9/assets/images/port_forward.jpg)
 
 ## Step-by-Step Instructions
 
