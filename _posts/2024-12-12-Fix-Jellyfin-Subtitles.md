@@ -18,3 +18,4 @@ Modifying these default parameters seems to solve the problem:
 
 * Install plugin Subtitle Extract (v4.0.0.0) -> plugin settings -> Check: Extract subtitles during library scan
 
+It fixes just some of the problems, the rest can be fixed by downloading an extra subtitle track from OpenSubtitles with the corresponding plugin.
