@@ -1,4 +1,13 @@
-# How to Connect a Keycloak Identity Provider to Another Keycloak instance
+---
+title: "How to Connect a Keycloak Identity Provider to Another Keycloak instance"
+categories:
+  - keycloak
+  - federated
+  - IDP
+tags:
+  - tech
+comments: true
+---
 
 Tested on Keycloak Docker version 24.0.4.
 
