@@ -1,4 +1,15 @@
-# Transferring WhatsApp Chats and Media from [OLD] to [NEW] Android Device
+---
+title: "How to Transfer WhatsApp Chats and Media from to a new Android Device"
+categories:
+  - WhatsApp
+  - Backup
+tags:
+  - tech
+comments: true
+---
+
+The steps marked with **[OLD]** denote that the operation should be performed on the phone with the data.
+The steps marked with **[NEW]** denote that the operation should be performed on the new phone that receives the data.
 
 To transfer your WhatsApp chats and media from an old phone to a new phone, follow these steps precisely:
 
