@@ -39,13 +39,16 @@ Set the following port forwarding rule in OpenWrt:
      vi /etc/openvpn/ovpn/server.ovpn
      ```
    - Add the following line to push the VPN DNS to clients:
-     ```bash
+
+      ```bash
      push "dhcp-option DNS 10.8.0.1"
      ```
+      
    - Here, `10.8.0.1` represents the VPN network IP address, which serves as the DNS.
 
 3. **Edit the Client Configuration**
    - In the VPN client configuration (`client.ovpn`), ensure this DNS setting is also specified:
+
      ```bash
      dhcp-option DNS 10.8.0.1
      ```
@@ -66,10 +69,12 @@ To access AdGuard with a standard login (rather than GL.iNet’s default setup),
 
 2. **Set Up a Username and Password**
    - To configure a login for AdGuard, use the following command to create a username and password:
+
      ```bash
      htpasswd -B -C 10 -n -b <USERNAME> <PASSWORD>
      ```
    - This command generates a hash that will look like:
+
      ```plaintext
      <USERNAME>:<HASH>
      ```
@@ -80,9 +85,10 @@ To access AdGuard with a standard login (rather than GL.iNet’s default setup),
      vim /etc/AdGuardHome/config.yml
      ```
    - Add the user credentials under the `users` section:
+   
      ```yaml
      users:
-       - name: nick
+       - name: <USERNAME>
          password: <HASH>
      ```
 
