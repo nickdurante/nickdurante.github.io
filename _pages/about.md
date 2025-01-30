@@ -4,18 +4,14 @@ title: "About"
 classes: wide
 ---
 
-Born and raised in Turin, Italy, I've graduated in Telecommunications Engineering
-from Politecnico di Torino (bachelor) and Universitat Politècnica de Catalunya (Master).
+I’m originally from Turin, Italy, with a background in Telecommunications Engineering from Politecnico di Torino and Universitat Politècnica de Catalunya.
 
-In the course of my Master I've grown fond of cryptography and from then my interest for cybersecurity sparked.
+I’m an experienced technical manager with a strong background in IT engineering and innovation. I’ve led high-impact projects across diverse sectors, including large corporations, academic institutions, and startups. My work includes H2020 and HE Critical Infrastructure Protection initiatives, where I’ve driven the development of cutting-edge solutions, such as Digital Twins, and coordinated cross-functional teams to deliver results at scale.
 
-A second passion I carry with me is everything related to aerospace, since I was a kid I remember learning with awe
-the legendary stories of Yuri Gagarin and the Apollo 11. Visiting Cape Canaveral as a teen strengthened an already solid passion.
+My work in cryptography and cybersecurity began during my Master’s, and since then, I’ve authored multiple peer-reviewed publications and developed a range of solutions, including a cryptographic device designed for my M.Sc. thesis to enhance data security and privacy.
 
-I've covered many roles in my career and they are reflected on my Github repositories, among these roles I had been:
- Android Developer, a Full-Stack engineer, System Engineer, Web Designer.
+A lifelong interest in aerospace, sparked by the stories of Yuri Gagarin and Apollo 11, was further fueled by my visit to Cape Canaveral as a teen. Today, this passion remains a key motivator in my work.
 
+When I’m not managing projects or diving into technical work, you can find me engaging in DIY projects or enjoying outdoor activities like snowboarding, trekking, football, and tennis.
 
-I'm extremely fond of the mountains and in my free time when I'm not programming you can find me busy on DIY projects, snowboarding, trekking, playing football or tennis.
-
-If you want to contact me, you can find me on Linkedin and GitHub, alternatively just drop a comment on an article.
+For collaboration or just to connect, feel free to reach out via LinkedIn or GitHub, or leave a comment on my latest article.
