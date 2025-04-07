@@ -1,5 +1,5 @@
 ---
-title: "How to Connect a Keycloak Identity Provider to Another Keycloak instance"
+title: "How to Connect a Keycloak Identity Provider to Another Keycloak instance using OpenID Connect"
 categories:
   - keycloak
   - federated
