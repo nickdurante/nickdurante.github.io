@@ -60,7 +60,7 @@ plugins:
 author:
   name   : "Nick Durante"
   avatar : "/assets/bio-photo.jpg"
-  bio    : "Telecommunications engineer, cybersecurity enthusiast, space exploration fanatic"
+  bio    : "Telecommunications engineer, cybersecurity and space exploration enthusiast, DIY hobbyist in the free time"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
