@@ -31,7 +31,7 @@ Now the adapter will remain soft-blocked after every boot.
 You can still enable it manually at any time with:
 
 ```bash
-rfkill unblock bluetooth
+rfkill block bluetooth
 ```
 
 This approach works across Fedora, Ubuntu, and other systemd-based distributions, and avoids desktop tools automatically turning the adapter back on.
