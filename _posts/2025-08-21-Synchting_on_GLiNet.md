@@ -21,11 +21,16 @@ $ cp syncthing /usr/bin/
 
 Easy.
 
-Following the instructions I was able to run the executable but the service could not be enabled. 
+
+Following the instructions I was able to run the executable but the service could not be enabled.
+
 Maybe my version of GL.iNet + OpenWRT does not support services enabling? Who knows.
+
 Fuckery with the overlays? Perhaps.
 
+
 Looking for an alternative I've added the line to crontab (`crontab -e`):
+
 ``` bash
 @reboot sleep 15 && /usr/bin/syncthing -home /root/.local/state/syncthing >> /root/log.txt 2>&1
 ```
@@ -33,12 +38,15 @@ Looking for an alternative I've added the line to crontab (`crontab -e`):
 To my surprise the crontab is erased at every boot (damn overlays).
 
 Adding the line to `/etc/rc.local` started the service but with wrong configuration file and wrong permissions.
+
 However, specifying the `-home` folder and adding few seconds of sleep to allow volumes to mount worked (kinda):
+
 ``` bash
 (sleep 15; /usr/bin/syncthing -home /root/.local/state/syncthing > /root/log.txt 2>&1) &
 ```
 
 Now the process was starting at every boot, but the folder permissions were wrong (why? who knows).
+
 To fix it, here is the workaround I used:
 
 1. Start with no folders other than the default one.
