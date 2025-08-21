@@ -32,7 +32,7 @@ Fuckery with the overlays? Perhaps.
 Looking for an alternative I've added the line to crontab (`crontab -e`):
 
 ``` bash
-@reboot sleep 15 && su - syncthing -c "/usr/bin/syncthing -home /home/syncthing/.local/state/syncthing >> /home/syncthing/log.txt 2>&1
+@reboot sleep 15 && su - syncthing -c "/usr/bin/syncthing -home /home/syncthing/.local/state/syncthing >> /home/syncthing/log.txt 2>&1"
 ```
 
 To my surprise the crontab is erased at every boot (damn overlays).
@@ -42,7 +42,7 @@ Adding the line to `/etc/rc.local` started the service but with wrong configurat
 However, specifying the `-home` folder and adding few seconds of sleep to allow volumes to mount worked (kinda):
 
 ``` bash
-(sleep 15; su - syncthing -c "/usr/bin/syncthing -home /home/syncthing/.local/state/syncthing >> /home/syncthing/log.txt 2>&1) &
+(sleep 15; su - syncthing -c "/usr/bin/syncthing -home /home/syncthing/.local/state/syncthing >> /home/syncthing/log.txt 2>&1") &
 ```
 
 Now the process was starting at every boot, but the folder permissions were wrong (why? who knows).
