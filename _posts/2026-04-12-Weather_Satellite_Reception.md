@@ -5,34 +5,34 @@ categories:
   - SDR
 comments: true
 ---
+The idea to fetch weather images from overhead satellites had been on my bucket list for a long time.
+While I was acquiring the equipment needed to receive APT NOAA images, the NOAA constellation was unfortunately decommissioned.
 
-This project has been living rent-free in my head for a long time.
-Finally pulling actual data out of the sky? Pure, unadulterated satisfaction.
+However, discovering **Jacopo Cassini's** blog over at [A-Centauri](https://www.a-centauri.com/) was a breath of fresh air that gave me the confidence to keep going. Once I set up my hardware correctly, receiving images from Meteor M2 satellites over LRPT proved easier than expected ([A-Centauri Guide](https://www.a-centauri.com/articoli/meteor-satellite-reception)).
+
+This project had been living rent-free in my head for a long time, and the moment I finally pulled real data out of the sky was deeply satisfying.
 
 The hardware I used is:
 
-* **V-dipole antenna**: 54cm, angled at 120° 
-* **Low pass SAW filter**: To keep the RF noise floor from ruining my life
-* **LNA**: 20dB gain, 50MHz - 6GHz (overkill? maybe.)
+* **V-dipole antenna**: 54 cm, angled at 120°
+* **Low-pass SAW filter**: To keep the RF noise floor from ruining reception
 * **RTL-SDR v3**
 
 <p align="center">
   <img src="/assets/images/satellite_reception.jpg" width="600" alt="Setup">
 </p>
 
-For the capturing the signal and actually decoding the bits into something human-readable I used [Satdump](https://www.satdump.org). 
-
+For capturing the signal and decoding it into something human-readable, I used [SatDump](https://www.satdump.org).
 
 <p align="center">
   <img src="/assets/images/satdump.png" width="600" alt="SatDump">
 </p>
 
-Special thanks to **Naji** for the help to **Jacopo Cassinis** for his incredible work over at [A-Centauri](https://www.a-centauri.com/).
+Special thanks to **Naji** for the advice and to **Jacopo Cassini** for the incredibly useful blog and for taking the time to answer my questions.
 
-In the section below, I’ll be dumping some of the captures whenever the pass timing and the weather gods align with my free time.
+In the section below, I'll be posting some of the captures whenever the pass timing and the weather gods align with my free time.
 
-
-# Gallery
+## Gallery
 
 
 <style>
